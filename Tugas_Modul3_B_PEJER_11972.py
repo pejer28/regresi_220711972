@@ -49,7 +49,7 @@ st.markdown("""
             color: #cccccc;
         }            
 
-        . center {
+        .center {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -79,7 +79,7 @@ uploaded_file = st.sidebar.file_uploader("Upload file dataset_regresi_IPK.csv", 
 if uploaded_file is not None:
     # Read CSV file
     input_data = pd.read_csv(uploaded_file)
-    st.write("<h3 style='text-align: center; color: #0073e6;'>Data yang diupload :< /h3>", unsafe_allow_html=True)
+    st.write("<h3 style='text-align: center; color: #0073e6;'>Data yang diupload :</h3>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
     model_path = r'SVR_IPK_model.pkl'
